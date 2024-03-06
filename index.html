@@ -173,6 +173,7 @@
     }
 
     a {
+      position: relative;
       color: var(--text-color-link);
       text-decoration-color: var(--text-underline-color);
       text-decoration-thickness: 1px;
@@ -225,8 +226,14 @@
 
     ul li {
       position: relative;
-      margin-bottom: 0.25em;
+      margin-bottom: 0.5rem;
       padding-left: 1em;
+    }
+
+    @media (min-width: 600px) {
+      ul {
+        margin-bottom: 0.25rem;
+      }
     }
 
     ul li::before {
